@@ -13,7 +13,8 @@ allprojects {
 ```
 Implement library in your app level build.gradle:
 ```bash
-
+tag: 1.0.0
+ implementation 'com.github.tuyen12081707:AdmobExample:Tag'
 ```
 
 
