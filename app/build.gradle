@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 35
     buildToolsVersion "30.0.2"
 
     defaultConfig {
         applicationId "com.vapp.admobexample"
         minSdkVersion 21
-        targetSdkVersion 34
-        versionCode 719
-        versionName "7.1.9"
+        targetSdkVersion 35
+        versionCode 100
+        versionName "1.0.0"
         multiDexEnabled true
         namespace "com.vapp.admobexample"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

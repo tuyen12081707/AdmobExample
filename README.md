@@ -13,9 +13,7 @@ allprojects {
 ```
 Implement library in your app level build.gradle:
 ```bash
-dependencies {
-    implementation 'com.github.dktlib:AdmobUtilsLibrary:{version}'
-}
+
 ```
 
 
