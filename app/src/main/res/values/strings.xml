@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AdmobExample</string>
+    <string name="play_console_license">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnw3LqFNhVmbdCzEc7eaMZTDYqlPARE1/IUfZWLnxEmWcOD2ZB59KbFNp92Wz+CizaGrA9NP2rBgm2zXVGx0oDAgu+MIIGkhqyy5LHP0dDFFEZVG3IsuqgRoqM4at0YFohXtgmc2uqec0AVh748SKBZ2gWuM7tM38ZHNhVhzL7tY5iTd8qUScuZIAwLALog7kuFPEkP1j53eghenbq2rwl4uZual2+OLFzGdLTG7BaBYVHealZwiKKxcYuo3N2ElTkq4SQyhyICO+MvRQ1GJtNTaPEhI9GHm7y5VHV1neb2fsr/154TAJxNN0UyW+MmX1/lnLjlLfMbCPvY+8f6tD2wIDAQAB</string>
+    <string name="premium">subcription_remove_ads_month</string>
+    <string name="product_id">demo_poduct</string>
+
+</resources>

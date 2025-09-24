@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="Do you want to exit?"
+        android:textAllCaps="false"
+        android:textColor="@color/gnt_black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnExit"
+        app:layout_constraintStart_toStartOf="@+id/btnRate"
+        app:layout_constraintTop_toBottomOf="@+id/ad_frame" />
+
+    <FrameLayout
+        android:id="@+id/ad_frame"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:backgroundTint="@color/gnt_black"
+                android:indeterminate="true"
+                android:progressTint="@color/gnt_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:text="Loading ad..."
+                android:textColor="@color/gnt_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btnRate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="No"
+        android:textAllCaps="true"
+        android:textColor="@color/gnt_red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnExit"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/btnExit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Yes"
+        android:textAllCaps="true"
+        android:textColor="@color/gnt_ad_green"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRate"
+        app:layout_constraintTop_toTopOf="@+id/btnRate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="15dp"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_LoadInter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="load inter" />
+
+                <Button
+                    android:id="@+id/btn_ShowInter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="show inter" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_LoadAndShowInter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="load and show inter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_LoadInterReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="load inter Reward" />
+
+                <Button
+                    android:id="@+id/btn_ShowInterReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="show inter Reward" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_LoadAndShowReward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="load and show reward"
+                android:background="@drawable/button_ripple"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_LoadAndGetNative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="load native" />
+
+                <Button
+                    android:id="@+id/btn_ShowNative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="show native" />
+
+                <Button
+                    android:id="@+id/btn_LoadAndShowNative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="load show native" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_LoadNative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Native in recycleview" />
+
+                <Button
+                    android:id="@+id/btn_LoadNativeGrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Native in Gridview" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_IAP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/teal_700"
+                    android:text="IAP"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_Rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple_200"
+                    android:text="Rate now"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_Utils"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gnt_gray"
+                    android:text="Utils Demo"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/nativeAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:minHeight="200dp"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:layout_above="@id/banner"
+        android:id="@+id/line"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner"
+        android:minHeight="50dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

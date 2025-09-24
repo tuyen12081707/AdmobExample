@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>test_banner_2</key>
+        <value>{"ad_unit_id" :"","type": "adaptive","refresh_rate_sec":15,"cb_fetch_interval_sec":25}</value>
+    </entry>
+</defaultsMap>

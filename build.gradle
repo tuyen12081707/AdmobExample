@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        agp_version1 = '8.2.2'
+        kotlin_version = '1.7.10'
+    }
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // vẫn để nếu cần các thư viện cũ
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$agp_version1"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        // bintray plugin đã loại bỏ
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://android-sdk.is.com/' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

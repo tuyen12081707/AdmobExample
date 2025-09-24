@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "420969523581",
+    "project_id": "gothic-protocol-373208",
+    "storage_bucket": "gothic-protocol-373208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420969523581:android:3a1d16720727e478134414",
+        "android_client_info": {
+          "package_name": "com.dktech.admob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420969523581-qbh15hb8vln7a0g007ma0f0b9b413bbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzhwoKFlIbL8iwfVs2Li9h6mdprekM5zE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420969523581-qbh15hb8vln7a0g007ma0f0b9b413bbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

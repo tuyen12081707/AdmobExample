@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:layout_marginTop="-55sp"
+        android:padding="@dimen/_15sdp"
+        android:layout_below="@id/dialog_rating_icon"
+        android:background="@drawable/rounded_rectangle">
+
+        <TextView
+            android:id="@+id/dialog_rating_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:gravity="center"
+            android:textColor="#212121"
+            android:maxLines="2"
+            android:lines="2"
+            android:text="We are working hard for a better user eperience."
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/dialog_rating_content"
+            android:layout_below="@+id/dialog_rating_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#5F5F5F"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="We’d greatly appreciate if you can rate us ."
+            android:textSize="@dimen/_12sdp" />
+
+        <com.willy.ratingbar.RotationRatingBar
+            android:id="@+id/dialog_rating_rating_bar"
+            android:layout_below="@id/dialog_rating_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:srb_numStars="5"
+            app:srb_minimumStars="0"
+            app:srb_rating="0"
+            app:srb_starWidth="@dimen/_24sdp"
+            app:srb_starHeight="@dimen/_24sdp"
+            app:srb_stepSize="1"
+            app:srb_isIndicator="false"
+            app:srb_clickable="true"
+            app:srb_scrollable="true"
+            app:srb_clearRatingEnabled="false"
+            >
+        </com.willy.ratingbar.RotationRatingBar>
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginLeft="-10dp"
+            android:layout_below="@+id/dialog_rating_title"
+            android:layout_toEndOf="@+id/dialog_rating_rating_bar"
+            android:src="@drawable/abc"/>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:layout_below="@+id/star2"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_toStartOf="@+id/star2"
+            android:src="@drawable/arrow"/>
+
+<!--        app:srb_drawableEmpty="@drawable/start_empty"-->
+<!--        app:srb_drawableFilled="@drawable/star_filled"-->
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#2B9999"
+            android:text="The best we can get :)    "
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@+id/dialog_rating_rating_bar"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRate"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:gravity="center"
+            android:background="@drawable/bg_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tv"
+            android:text="Rate"/>
+
+
+        <TextView
+            android:id="@+id/btnLate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="#5F5F5F"
+            android:text="Maybe Later"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/btnRate"
+
+
+            />
+
+
+        <LinearLayout
+            android:id="@+id/dialog_rating_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_rating_rating_bar"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/dialog_rating_button_negative"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/dialog_rating_button_positive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/dialog_rating_icon"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/rate_0"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
