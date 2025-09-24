@@ -42,7 +42,7 @@ public class MyApplication extends Application {
 
 ```
 ```bash
-    New Update 7.1.5: Load AOA splash
+    
 AOAManager aoaManager;
 ...
 aoaManager = new AOAManager(this, "ca-app-pub-3940256099942544/3419835294", 3000, new AOAManager.AppOpenAdsListener() {
